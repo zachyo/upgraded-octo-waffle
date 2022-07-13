@@ -40,7 +40,7 @@ function countEvenNumbers(arrayOfNumbers) {
   });
   return evenNumbers;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -58,7 +58,7 @@ function countEvenNumbers(arrayOfNumbers) {
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
   const farenheitValue = (num) => {
-    return (num * 9) / 5 + 32;
+    return Math.trunc((num * 9) / 5 + 32);
   };
   const celciusArray = [];
   arrayOfNumbers.forEach((num) => {
